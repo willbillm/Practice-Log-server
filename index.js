@@ -4,7 +4,6 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import statRoutes from './routes/tracker.js'
 import dotenv from 'dotenv';
-import path from 'path/win32';
 
 dotenv.config();
 
