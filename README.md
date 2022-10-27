@@ -44,4 +44,8 @@ If you have followed the steps correctly, your terminal will return 'Server is l
 
 The server should now be fully functional and the information entered on the client end will be saved in your MongoDB cluster.
 
+Client:
+
+Refer to the repository 'Practice-Log-client' for instructions on setting up the front end of the app.
+
 
