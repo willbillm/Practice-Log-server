@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({limit: '30mb', extended: true}))
 app.use(cors());
 app.use('/stats', statRoutes);
 
-const CONNECTION_URL = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.yb5t7.mongodb.net/?retryWrites=true&w=majority`
+const CONNECTION_URL = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_CLUSTER}.${process.env.DB_STRING}.mongodb.net/?retryWrites=true&w=majority`
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, {
