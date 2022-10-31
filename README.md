@@ -2,13 +2,13 @@ Getting started:
 
 In the terminal, run the command 'npm install' to install necessary dependencies.
 
-Database:
+Database setup:
 
-To store data, you will have to create a MongoDB database and connect it to the app.
+To store data, you will have to create a MongoDB cluster and connect it to the application.
 
-You will change the .txt file to a .env file and fill in the info for DB_USERNAME, DB_PASSWORD, DB_CLUSTER, and DB_STRING. To get this info, you'll have to create a MongoDB cluster.
+You will change the .txt file to a .env file and fill in the info for DB_USERNAME, DB_PASSWORD, DB_CLUSTER, and DB_STRING. To get this info, you'll have to create your MongoDB cluster.
 
-Follow the steps below to create your MongoDB cluster.
+Follow the steps below to create your MongoDB cluster:
 
 First create an account at the following, 'https://www.mongodb.com/cloud/atlas/register'
 
@@ -34,7 +34,7 @@ Under 'Select your driver and version', choose 'Node.js'
 
 Under 'Add your connection string into your application code', leave the 'Include full driver code example' box unchecked.
 
-index.js already contains the the standard information for your connection string. The .env file is where the unique parts of your connection string are included.
+index.js already contains the the standard information for your connection string in the variable 'CONNECTION_URL'. The .env file is where the unique parts of your connection string are included.
 
 Under DB_STRING, include the string following your cluster name in the connection string. Once this information is recorded, select 'close'.
 
